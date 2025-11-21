@@ -1,4 +1,4 @@
-import { Home, Microscope, Smartphone, FileCheck } from "lucide-react";
+import { Package, Droplets, Clock, FileCheck } from "lucide-react";
 
 const Solution = () => {
   return (
@@ -7,11 +7,10 @@ const Solution = () => {
         <div className="max-w-5xl mx-auto space-y-16">
           <div className="text-center space-y-4 animate-fade-in-up">
             <h2 className="text-4xl md:text-5xl font-bold text-foreground">
-              A Better Way Forward
+              Simple as a Pregnancy Test
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              MIRA brings clinical-grade testing to the comfort of your home, 
-              empowering you to take control of your health journey
+              MIRA uses familiar, easy-to-understand technology to provide accessible endometriosis screening
             </p>
           </div>
           
@@ -19,36 +18,36 @@ const Solution = () => {
             <div className="space-y-8">
               <div className="flex gap-4 animate-fade-in-up">
                 <div className="w-12 h-12 rounded-xl bg-primary-lighter flex items-center justify-center flex-shrink-0">
-                  <Home className="w-6 h-6 text-primary" />
+                  <Package className="w-6 h-6 text-primary" />
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold mb-2 text-foreground">1. Order Your Kit</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    Receive a discreet, easy-to-use test kit delivered to your door with clear instructions.
+                    Receive a discreet at-home test kit with everything you need for easy sample collection.
                   </p>
                 </div>
               </div>
               
               <div className="flex gap-4 animate-fade-in-up" style={{ animationDelay: '0.1s' }}>
                 <div className="w-12 h-12 rounded-xl bg-accent-light flex items-center justify-center flex-shrink-0">
-                  <Microscope className="w-6 h-6 text-accent" />
+                  <Droplets className="w-6 h-6 text-accent" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold mb-2 text-foreground">2. Collect Your Sample</h3>
+                  <h3 className="text-xl font-semibold mb-2 text-foreground">2. Collect Sample</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    Simple, painless sample collection in the privacy of your home. Takes less than 5 minutes.
+                    Simple urine sample - just like a pregnancy test. No complex procedures or discomfort.
                   </p>
                 </div>
               </div>
               
               <div className="flex gap-4 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
                 <div className="w-12 h-12 rounded-xl bg-secondary-light flex items-center justify-center flex-shrink-0">
-                  <Smartphone className="w-6 h-6 text-secondary" />
+                  <Clock className="w-6 h-6 text-secondary" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold mb-2 text-foreground">3. Get Your Results</h3>
+                  <h3 className="text-xl font-semibold mb-2 text-foreground">3. Wait for Results</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    Access your results through our secure, HIPAA-compliant dashboard within days.
+                    Results appear in minutes. Clear, easy-to-read lines indicate your risk level.
                   </p>
                 </div>
               </div>
@@ -58,42 +57,24 @@ const Solution = () => {
                   <FileCheck className="w-6 h-6 text-primary" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold mb-2 text-foreground">4. Take Action</h3>
+                  <h3 className="text-xl font-semibold mb-2 text-foreground">4. Understand Your Results</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    Armed with insights, work with your healthcare provider to develop a personalized care plan.
+                    Clear guidance on next steps and when to consult with healthcare providers.
                   </p>
                 </div>
               </div>
             </div>
             
-            <div className="relative animate-scale-in">
-              <div className="bg-gradient-accent rounded-3xl p-12 shadow-soft">
-                <div className="bg-card rounded-2xl p-8 space-y-6">
-                  <div className="aspect-square rounded-xl bg-primary-lighter flex items-center justify-center">
-                    <Microscope className="w-24 h-24 text-primary opacity-50" />
-                  </div>
-                  <div className="space-y-2">
-                    <p className="text-sm text-muted-foreground">Sample Analysis</p>
-                    <div className="h-2 bg-muted rounded-full overflow-hidden">
-                      <div className="h-full w-3/4 bg-primary rounded-full animate-pulse" />
-                    </div>
-                  </div>
-                  <div className="space-y-2 text-sm">
-                    <div className="flex justify-between">
-                      <span className="text-muted-foreground">Biomarker Detection</span>
-                      <span className="text-primary font-medium">Active</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="text-muted-foreground">AI Analysis</span>
-                      <span className="text-secondary font-medium">Processing</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="text-muted-foreground">Results Ready</span>
-                      <span className="text-accent font-medium">Soon</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            
+          </div>
+
+          {/* Investor-focused note */}
+          <div className="text-center pt-8 animate-fade-in-up">
+            <div className="inline-block bg-muted/50 rounded-lg px-6 py-4">
+              <p className="text-sm text-muted-foreground italic">
+                <strong>Investment Opportunity:</strong> Leveraging proven lateral flow technology with novel endometriosis biomarkers 
+                for a scalable, manufacturable solution with familiar user experience.
+              </p>
             </div>
           </div>
         </div>

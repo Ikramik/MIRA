@@ -1,33 +1,33 @@
-import { ShieldCheck, Zap, Brain, FlaskConical } from "lucide-react";
+import { Home, DollarSign, Users, Lightbulb } from "lucide-react";
 import { Card } from "@/components/ui/card";
 
 const Features = () => {
   const features = [
     {
-      icon: ShieldCheck,
-      title: "Privacy First",
-      description: "Your health data is encrypted and never shared. HIPAA-compliant storage ensures complete confidentiality.",
+      icon: Home,
+      title: "At-Home Convenience",
+      description: "No more waiting months for specialist appointments. Get initial screening from the comfort of your home with our simple menstrual blood test.",
       color: "primary",
       bgColor: "bg-primary-lighter",
     },
     {
-      icon: Zap,
-      title: "Fast Results",
-      description: "Get your risk assessment in days, not years. Our streamlined process delivers insights when you need them most.",
+      icon: DollarSign,
+      title: "Cost-Effective Solution",
+      description: "Significantly more affordable than diagnostic laparoscopy. Reduces healthcare costs while increasing accessibility for millions of women.",
       color: "accent",
       bgColor: "bg-accent-light",
     },
     {
-      icon: Brain,
-      title: "AI-Powered Analysis",
-      description: "Advanced machine learning algorithms analyze multiple biomarkers to provide accurate risk assessments.",
+      icon: Users,
+      title: "Patient-Centric Design",
+      description: "Built with real women's experiences in mind. Simple, familiar test format reduces anxiety and increases adoption.",
       color: "secondary",
       bgColor: "bg-secondary-light",
     },
     {
-      icon: FlaskConical,
-      title: "Clinically Validated",
-      description: "Built on peer-reviewed research and validated biomarkers. Our science is rigorous, our approach is compassionate.",
+      icon: Lightbulb,
+      title: "Proprietary Biomarkers",
+      description: "Leveraging novel biomarker research to detect endometriosis through non-invasive methods. Currently in research and development phase.",
       color: "primary",
       bgColor: "bg-primary-lighter",
     },
@@ -39,10 +39,10 @@ const Features = () => {
         <div className="max-w-6xl mx-auto space-y-16">
           <div className="text-center space-y-4 animate-fade-in-up">
             <h2 className="text-4xl md:text-5xl font-bold text-foreground">
-              Why Choose MIRA?
+              Our Competitive Advantages
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Cutting-edge technology meets compassionate care
+              Addressing critical gaps in endometriosis diagnosis through innovative technology
             </p>
           </div>
           
@@ -68,12 +68,26 @@ const Features = () => {
           
           <div className="bg-gradient-accent rounded-3xl p-12 text-center shadow-soft animate-fade-in">
             <h3 className="text-3xl font-bold mb-4 text-foreground">
-              Accessible. Accurate. Empowering.
+              Market Opportunity & Vision
             </h3>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              We believe every woman deserves timely access to the information 
-              she needs to make informed decisions about her health.
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-6">
+              Targeting the 1 in 10 women affected by endometriosis worldwide, 
+              with a solution that could reduce diagnosis time from 7+ years to minutes.
             </p>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-sm">
+              <div className="bg-background/50 rounded-lg p-4">
+                <div className="text-2xl font-bold text-primary mb-1">190M+</div>
+                <div className="text-muted-foreground">Women Affected Globally</div>
+              </div>
+              <div className="bg-background/50 rounded-lg p-4">
+                <div className="text-2xl font-bold text-accent mb-1">7-10 Years</div>
+                <div className="text-muted-foreground">Current Average Diagnosis Delay</div>
+              </div>
+              <div className="bg-background/50 rounded-lg p-4">
+                <div className="text-2xl font-bold text-secondary mb-1">$20B+</div>
+                <div className="text-muted-foreground">Annual Healthcare Burden</div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

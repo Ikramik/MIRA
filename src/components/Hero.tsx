@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Mail } from "lucide-react";
 import heroImage from "@/assets/hero-medical.jpg";
 
 const Hero = () => {
@@ -22,7 +22,7 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto text-center space-y-8 animate-fade-in-up">
           <div className="inline-block">
             <span className="px-4 py-2 rounded-full bg-primary-lighter text-primary text-sm font-medium">
-              Breakthrough Innovation in Women's Health
+              Innovating Women's Health Diagnostics
             </span>
           </div>
           
@@ -32,12 +32,10 @@ const Hero = () => {
             </span>
           </h1>
           
-          <h2 className="text-3xl md:text-4xl font-semibold text-foreground">
-            Home Test Kit for Early Detection of Endometriosis
-          </h2>
+         
           
           <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            A simple at-home test to help women get answers faster
+            Developing a non-invasive home test kit to provide women faster answers and better healthcare outcomes
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-6">
@@ -46,32 +44,40 @@ const Hero = () => {
               className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-soft hover:shadow-lg transition-all duration-300 text-lg px-8 py-6"
               onClick={scrollToContact}
             >
-              Join the Waitlist
+              <Mail className="mr-2 h-5 w-5" />
+              Contact for Investment
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
             <Button 
               size="lg" 
               variant="outline"
               className="border-2 border-primary text-primary hover:bg-primary-lighter transition-all duration-300 text-lg px-8 py-6"
-              onClick={scrollToContact}
+              onClick={() => document.getElementById('solution')?.scrollIntoView({ behavior: 'smooth' })}
             >
-              Contact Us
+              Learn More
             </Button>
           </div>
           
-          <div className="pt-12 flex items-center justify-center gap-12 text-sm text-muted-foreground">
+          <div className="pt-12 flex flex-col sm:flex-row items-center justify-center gap-8 text-sm text-muted-foreground">
             <div className="flex items-center gap-2">
               <div className="w-2 h-2 rounded-full bg-secondary" />
-              <span>Clinically Backed</span>
+              <span>Early Detection Focus</span>
             </div>
             <div className="flex items-center gap-2">
               <div className="w-2 h-2 rounded-full bg-accent" />
-              <span>Privacy First</span>
+              <span>Patient Privacy First</span>
             </div>
             <div className="flex items-center gap-2">
               <div className="w-2 h-2 rounded-full bg-primary" />
-              <span>FDA Compliant</span>
+              <span>Non-Invasive Solution</span>
             </div>
+          </div>
+
+          {/* Disclaimer for investors */}
+          <div className="pt-8 max-w-2xl mx-auto">
+            <p className="text-xs text-muted-foreground/70 italic">
+              * MIRA is currently in the ideation and development phase. This product is not yet available for clinical use and has not been evaluated by the FDA.
+            </p>
           </div>
         </div>
       </div>

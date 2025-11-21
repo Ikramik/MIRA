@@ -1,4 +1,4 @@
-import { Mail, Linkedin, Twitter } from "lucide-react";
+import { Mail, Linkedin, Users } from "lucide-react";
 
 const Footer = () => {
   const scrollToSection = (id: string) => {
@@ -15,19 +15,53 @@ const Footer = () => {
               MIRA
             </h3>
             <p className="text-background/80 text-sm leading-relaxed">
-              Empowering women's health through accessible, innovative early detection technology.
+              Revolutionizing endometriosis diagnosis through accessible at-home testing technology.
             </p>
+            <div className="flex gap-3">
+              <a 
+                href="https://linkedin.com/company/mira-endo" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-8 h-8 rounded-full bg-background/10 hover:bg-background/20 flex items-center justify-center transition-colors"
+                aria-label="LinkedIn"
+              >
+                <Linkedin className="w-4 h-4" />
+              </a>
+              <a 
+                href="mailto:mirasingteam@gmail.com"
+                className="w-8 h-8 rounded-full bg-background/10 hover:bg-background/20 flex items-center justify-center transition-colors"
+                aria-label="Email"
+              >
+                <Mail className="w-4 h-4" />
+              </a>
+            </div>
           </div>
           
           <div>
-            <h4 className="font-semibold mb-4">Company</h4>
+            <h4 className="font-semibold mb-4">Navigation</h4>
             <ul className="space-y-2 text-sm">
+              <li>
+                <button 
+                  onClick={() => scrollToSection('problem')}
+                  className="text-background/80 hover:text-background transition-colors"
+                >
+                  The Problem
+                </button>
+              </li>
+              <li>
+                <button 
+                  onClick={() => scrollToSection('solution')}
+                  className="text-background/80 hover:text-background transition-colors"
+                >
+                  Our Solution
+                </button>
+              </li>
               <li>
                 <button 
                   onClick={() => scrollToSection('team')}
                   className="text-background/80 hover:text-background transition-colors"
                 >
-                  About Us
+                  Our Team
                 </button>
               </li>
               <li>
@@ -37,16 +71,6 @@ const Footer = () => {
                 >
                   Contact
                 </button>
-              </li>
-              <li>
-                <a href="#" className="text-background/80 hover:text-background transition-colors">
-                  Careers
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-background/80 hover:text-background transition-colors">
-                  Press
-                </a>
               </li>
             </ul>
           </div>
@@ -59,44 +83,47 @@ const Footer = () => {
                   onClick={() => scrollToSection('faq')}
                   className="text-background/80 hover:text-background transition-colors"
                 >
-                  FAQ
+                  Investor FAQ
                 </button>
               </li>
               <li>
-                <a href="#" className="text-background/80 hover:text-background transition-colors">
-                  Blog
+                <a 
+                  href="mailto:mirasingteam@gmail.com?subject=Pitch Deck Request&body=Hello MIRA team, I would like to request your pitch deck."
+                  className="text-background/80 hover:text-background transition-colors"
+                >
+                  Pitch Deck
                 </a>
               </li>
               <li>
-                <a href="#" className="text-background/80 hover:text-background transition-colors">
-                  Research
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-background/80 hover:text-background transition-colors">
-                  Support
+                <a 
+                  href="mailto:mirasingteam@gmail.com?subject=Business Plan Request&body=Hello MIRA team, I would like to request your detailed business plan."
+                  className="text-background/80 hover:text-background transition-colors"
+                >
+                  Business Plan
                 </a>
               </li>
             </ul>
           </div>
           
           <div>
-            <h4 className="font-semibold mb-4">Legal</h4>
+            <h4 className="font-semibold mb-4">Connect</h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <a href="#" className="text-background/80 hover:text-background transition-colors">
-                  Privacy Policy
+                <a 
+                  href="mailto:mirasingteam@gmail.com"
+                  className="text-background/80 hover:text-background transition-colors flex items-center gap-2"
+                >
+                  <Mail className="w-4 h-4" />
+                  mirasingteam@gmail.com
                 </a>
               </li>
-              <li>
-                <a href="#" className="text-background/80 hover:text-background transition-colors">
-                  Terms of Service
-                </a>
+              <li className="flex items-center gap-2 text-background/80">
+                <Users className="w-4 h-4" />
+                <span>Early Stage Startup</span>
               </li>
-              <li>
-                <a href="#" className="text-background/80 hover:text-background transition-colors">
-                  HIPAA Compliance
-                </a>
+              <li className="text-background/60 text-xs mt-4">
+                Currently in R&D phase<br />
+                Seeking seed funding
               </li>
             </ul>
           </div>
@@ -104,31 +131,12 @@ const Footer = () => {
         
         <div className="border-t border-background/20 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-background/60">
-            © 2024 MIRA Health Technologies. All rights reserved.
+            © 2025 MIRA Endometriosis Detection. All rights reserved.
           </p>
           
-          <div className="flex gap-4">
-            <a 
-              href="#" 
-              className="w-10 h-10 rounded-full bg-background/10 hover:bg-background/20 flex items-center justify-center transition-colors"
-              aria-label="Twitter"
-            >
-              <Twitter className="w-5 h-5" />
-            </a>
-            <a 
-              href="#" 
-              className="w-10 h-10 rounded-full bg-background/10 hover:bg-background/20 flex items-center justify-center transition-colors"
-              aria-label="LinkedIn"
-            >
-              <Linkedin className="w-5 h-5" />
-            </a>
-            <a 
-              href="#" 
-              className="w-10 h-10 rounded-full bg-background/10 hover:bg-background/20 flex items-center justify-center transition-colors"
-              aria-label="Email"
-            >
-              <Mail className="w-5 h-5" />
-            </a>
+          <div className="text-xs text-background/60 text-center md:text-right">
+            <p>Developing non-invasive diagnostic technology for women's health</p>
+            <p className="mt-1">Not for clinical use. Currently in development phase.</p>
           </div>
         </div>
       </div>
